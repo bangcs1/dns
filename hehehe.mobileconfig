@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- ================= DNS PAYLOAD ================= -->
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.dnsSettings.managed</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>lvbang.dns.apple.icloud.only</string>
+
+      <key>PayloadUUID</key>
+      <string>9A3C2F18-6E77-4D1F-9B42-8E4A6D3CFA21</string>
+
+      <key>PayloadDisplayName</key>
+      <string>lvbang</string>
+
+      <key>PayloadOrganization</key>
+      <string>lvbang</string>
+
+
+      <key>DNSSettings</key>
+      <dict>
+        <!-- DNS over HTTPS -->
+        <key>DNSProtocol</key>
+        <string>HTTPS</string>
+
+        <!-- DNS của bạn -->
+        <key>ServerURL</key>
+        <string>https://dns.nextdns.io/6f711a</string>
+
+        <!-- CHỈ khi domain match trong list này mới dùng DNS này -->
+        <key>SupplementalMatchDomains</key>
+        <array>
+          <string>.revenuecat.com</string>
+          <string>.apple.com</string>
+          <string>.icloud.com</string>
+        </array>
+      </dict>
+
+      <!-- Luôn áp dụng rule khi match domain -->
+      <key>OnDemandRules</key>
+      <array>
+        <dict>
+          <key>Action</key>
+          <string>Connect</string>
+        </dict>
+      </array>
+    </dict>
+  </array>
+
+  <!-- ================= ROOT PAYLOAD ================= -->
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadIdentifier</key>
+  <string>lvbang.dns.apple.icloud.only</string>
+  <key>PayloadUUID</key>
+  <string>A4F9C2E7-1B6D-4A83-9C5E-7D2F8B6A1E44</string>
+  <key>PayloadDisplayName</key>
+  <string>lvbang</string>
+  <key>PayloadDescription</key>
+  <string>Only selected domains (.revenuecat.com, .apple.com, .icloud.com) use NextDNS (6f711a). Other domains use system DNS.</string>
+  <key>PayloadScope</key>
+  <string>User</string>
+</dict>
+</plist>
