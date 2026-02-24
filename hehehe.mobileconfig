@@ -63,7 +63,7 @@
   <key>PayloadDisplayName</key>
   <string>lvbang</string>
   <key>PayloadDescription</key>
-  <string>Config giữ Locket Gold cho IOS hehe :>.</string>
+  <string>Config giữ Locket Gold cho IOS hehe.</string>
   <key>PayloadScope</key>
   <string>User</string>
 </dict>
