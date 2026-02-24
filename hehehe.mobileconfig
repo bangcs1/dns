@@ -37,8 +37,6 @@
         <key>SupplementalMatchDomains</key>
         <array>
           <string>.revenuecat.com</string>
-          <string>.apple.com</string>
-          <string>.icloud.com</string>
         </array>
       </dict>
 
@@ -65,7 +63,7 @@
   <key>PayloadDisplayName</key>
   <string>lvbang</string>
   <key>PayloadDescription</key>
-  <string>Only selected domains (.revenuecat.com, .apple.com, .icloud.com) use NextDNS (6f711a). Other domains use system DNS.</string>
+  <string>Config giữ Locket Gold cho IOS hehe :>.</string>
   <key>PayloadScope</key>
   <string>User</string>
 </dict>
